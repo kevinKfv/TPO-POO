@@ -1,0 +1,189 @@
+public class Autoparte {
+    private String id;
+    private String denominacion;
+    private String descripcion;
+    private String categoria;
+    private String marca;
+    private String vehiculo;
+    private String modelo;
+    private double precio;
+    private int stock;
+    private int stockMinimo;
+    private String enlace;
+
+    public Autoparte(String id, String denominacion, String descripcion, String categoria, String marca, String vehiculo, String modelo, double precio, int stock, int stockMinimo, String enlace) {
+        this.id = id;
+        this.denominacion = denominacion;
+        this.descripcion = descripcion;
+        this.categoria = categoria;
+        this.marca = marca;
+        this.vehiculo = vehiculo;
+        this.modelo = modelo;
+        this.precio = precio;
+        this.stock = stock;
+        this.stockMinimo = stockMinimo;
+        this.enlace = enlace;
+    }
+ 
+    // Getters and setters
+    public String getId() {
+        return id;
+    }
+ 
+    public void setId(String id) {
+        this.id = id;
+    }
+ 
+    public String getDenominacion() {
+        return denominacion;
+    }
+ 
+    public void setDenominacion(String denominacion) {
+        this.denominacion = denominacion;
+    }
+ 
+    public String getDescripcion() {
+        return descripcion;
+    }
+ 
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+ 
+    public String getCategoria() {
+        return categoria;
+    }
+ 
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+ 
+    public String getMarca() {
+        return marca;
+    }
+ 
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+ 
+    public String getVehiculo() {
+        return vehiculo;
+    }
+ 
+    public void setVehiculo(String vehiculo) {
+        this.vehiculo = vehiculo;
+    }
+ 
+    public String getModelo() {
+        return modelo;
+    }
+ 
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+ 
+    public double getPrecio() {
+        return precio;
+    }
+ 
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+ 
+    public int getStock() {
+        return stock;
+    }
+ 
+    public void setStock(int stock) {
+        this.stock = stock;
+    }
+ 
+    public int getStockMinimo() {
+        return stockMinimo;
+    }
+ 
+    public void setStockMinimo(int stockMinimo) {
+        this.stockMinimo = stockMinimo;
+    }
+ 
+    public String getEnlace() {
+        return enlace;
+    }
+ 
+    public void setEnlace(String enlace) {
+        this.enlace = enlace;
+    }
+    public void cargarAutoparte() {
+          // Implement the logic to load a new autopart
+      }
+   
+      public void modificarAutoparte() {
+          // Implement the logic to modify an existing autopart
+      }
+   
+      public void listarAutoparte() {
+          // Implement the logic to list autoparts
+      }
+   
+      public void bajaAutoparte() {
+          // Implement the logic to delete an autopart
+      }
+}
+ 
+public class Cliente {
+    private String id;
+    private String nombre;
+    private String direccion;
+    private String telefono;
+    private String localidad;
+    private String provincia;
+    private String email;
+
+    // Constructor, getters and setters...
+ 
+    public void registrarPedido() {
+        // Implement the logic to register a new order
+    }
+ 
+    public void cancelarPedido() {
+        // Implement the logic to cancel an order
+    }
+
+}
+ 
+public class Usuario {
+    private String id;
+    private String nombreUsuario;
+    private String contrasena;
+    private String email;
+    private String perfil;
+
+    
+
+}
+ 
+public class Pedido {
+    private String id;
+    private Date fecha;
+    private double montoTotal;
+    private Usuario usuario;
+    private List<Detalle> detalles;
+
+    // Constructor, getters and setters...
+ 
+    public void registrarVenta() {
+        // Implement the logic to register a new sale
+    }
+ 
+    public void calcularMonto() {
+        // Implement the logic to calculate the amount of the sale
+    }
+}
+ 
+public class Detalle {
+    private String id;
+    private Autoparte articulo;
+    private double precio;
+    private int cantidad;
+
+}
